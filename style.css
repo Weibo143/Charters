@@ -1,0 +1,128 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #003366; /* Dark blue for a professional look */
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section Headings */
+section h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* Aircraft and Trip Card Containers */
+.aircraft-list, .trip-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Individual Aircraft and Trip Cards */
+.aircraft-card, .trip-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.aircraft-card:hover, .trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.aircraft-card h3, .trip-card h3 {
+    color: #0056b3; /* A slightly lighter blue for headings */
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.aircraft-card p, .trip-card p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.aircraft-card p strong, .trip-card p strong {
+    color: #003366;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .aircraft-list, .trip-list {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+
+    .aircraft-card, .trip-card {
+        padding: 15px;
+    }
+}
